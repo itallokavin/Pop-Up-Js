@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+</head>
+<body>
+
+    <div class="popup-origin">
+        <div class="container-popup">
+            <a target="_blank" href="https://unimedmaranhaodosul.clubeparcerias.com.br" style="background:#fff; padding:10px">
+                <img id="imagem" src="https://www.unimed.coop.br/site/documents/4533375/6090455/POST_CLUBE_DE_VANTAGES_POP-UP_2023+%281%29+%281%29.png/e1b006f8-3cb7-5e71-0282-59d061da4875?version=1.0&t=1683921838985&imagePreview=1" />
+            </a>
+        </div>
+        <button class="btn-origin">&times;</button>
+    </div>
+
+    <style>
+        .popup-origin{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+        .container-popup{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-origin{
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border: none;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        #imagem{
+            width: 500px;
+        }
+
+        @media(min-width:1400px){
+            #imagem{
+                width: 600px;
+            }
+        }
+
+        @media(max-width: 430px){
+            #imagem{
+                width: 350px;
+            }
+        }
+
+    </style>
+<!--
+    <script> 
+        function teste(){
+            const btn = document.querySelector('#pop');
+            const popUp = document.querySelector('.popup-origin');
+            const popCont = document.querySelector('.container-popup');
+            const popBtn = document.querySelector('.btn-origin');
+			const navbar = document.querySelector('.menu-spacer');
+            
+			navbar.style.display = 'none'
+            popUp.style.display = 'flex';
+            popBtn.addEventListener('click', function() {
+                popUp.style.display = 'none';
+				navbar.style.display = 'flex'
+            });
+        }
+
+        window.onload = teste()
+    </script>
+-->
+</body>
+</html>
